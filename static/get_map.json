@@ -1,0 +1,9 @@
+{
+    "name": "get_map",
+    "description": "指定した地図を取得するコマンド",
+    "describe": {
+        "map_level": "地図レベルを入力してね！",
+        "x_number": "X方向のナンバリングを入力してね！",
+        "z_number": "Z方向のナンバリングを入力してね！"
+    }
+}

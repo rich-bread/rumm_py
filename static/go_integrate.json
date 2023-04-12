@@ -1,0 +1,7 @@
+{
+    "name": "go_integrate",
+    "description": "指定した地図レベルで地図画像を統合するコマンド",
+    "describe": {
+        "map_level": "地図レベルを入力してね！" 
+    }
+}
