@@ -23,7 +23,7 @@ class GetMap(commands.Cog):
             await interaction.response.defer(thinking=True) #thinking処理
             
             map_id = self.cmf.create_map_id(m=map_level,x=x_number,z=z_number) #地図ID作成
-            raw_mapdata = await self.dbf.get_mapdata(guild_id=interaction.guild_id, column='map_id', record=map_id) #地図情報リクエスト
+            raw_mapdata = await self.dbf.get_mapdata(guild_id=interaction.guild_id, column='map_id', record=map_id, recordtype='str') #地図情報リクエスト
             mapdata = raw_mapdata[0]
 
             if not mapdata: raise MyError("指定した地図画像はデータベースに登録されてないよ！")
